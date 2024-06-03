@@ -12,12 +12,12 @@ public class Ejercicio2 {
         double suma = 0; 
         int acumulador = 0;
         double rangoSuma;
-        int cantMultiplos = -1;
+        int cantMultiplos = 0;
         Scanner leer = new Scanner(System.in);
         System.out.println("Ponga un numero: ");
         rangoSuma = leer.nextDouble();
-        int i = 0;
-        for(i=0; i<=rangoSuma; i++){
+        int i = 1;
+        for(i=1; i<=rangoSuma; i++){
             if(i%5==0 && i%3 ==0){
                 suma = suma+i;
                 cantMultiplos++;
