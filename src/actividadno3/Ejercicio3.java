@@ -14,16 +14,30 @@ public class Ejercicio3 {
         int rangoFinal;
         Scanner leer = new Scanner(System.in);
         
-        do{
-            System.out.println("De un valor inicial");
+        while(true){
+            System.out.print("Introduzcca el rango inicial: ");
             rangoInicial = leer.nextInt();
-            System.out.println("De el valor final");
+            
+            System.out.print("Introduzca el rango final: ");
             rangoFinal = leer.nextInt();
-
-            if(rangoInicial<rangoFinal){  
-                
-            }while(rangoInicial < rangoFinal);
+            
+            if(rangoInicial<rangoFinal){
+                int suma = 0;
+                    
+                for(int i = rangoInicial; i<=rangoFinal; i++){
+                    if(i%2 == 0){
+                        suma = suma+i;
+                        }
+                }
+                System.out.println("La suma de los numeros pares entre el rango: ["+ rangoInicial+","+ rangoFinal+ "] es: "+ suma);
+                break;
+            }else{
+                System.out.println("Vuelva a dar los datos: El rango inicial tiene que ser menor al rango final");
+            }    
         }
+        
+      
+            
     }
     
 }
