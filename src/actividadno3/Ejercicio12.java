@@ -9,10 +9,16 @@ public class Ejercicio12 {
         
         for(int i = 0; i<5; i++){
             for(int j = 0; j< 5; j++){
-                
+                matriz[i][j] = 2;
             }
         }
-        
+        System.out.println("La matriz 5x5 inicializada en 2 :");
+        for(int i = 0; i<5; i++){
+            for(int j = 0; j< 5; j++){
+                System.out.print(matriz[i][j]+" ");
+            }
+            System.out.println("");
+        }
     }   
     
 }
